@@ -21,7 +21,5 @@ public class SetTarget : MonoBehaviour
 
     private void Update() {
         agent.destination = target.position;
-
-        Debug.Log(agent.IsAtDestination(target.position));
     }
 }

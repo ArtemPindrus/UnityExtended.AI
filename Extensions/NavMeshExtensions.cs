@@ -25,5 +25,7 @@ namespace UnityExtended.AI.Extensions {
 
             return false;
         }
+
+        public static bool IsMoving(this NavMeshAgent agent) {
     }
 }
