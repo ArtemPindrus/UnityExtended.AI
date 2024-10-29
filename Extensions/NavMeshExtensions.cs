@@ -27,5 +27,7 @@ namespace UnityExtended.AI.Extensions {
         }
 
         public static bool IsMoving(this NavMeshAgent agent) {
+            return agent.velocity.sqrMagnitude > 0;
+        }
     }
 }
