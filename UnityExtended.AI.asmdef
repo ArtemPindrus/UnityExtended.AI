@@ -2,7 +2,8 @@
     "name": "UnityExtended.AI",
     "rootNamespace": "UnityExtended.AI",
     "references": [
-        "GUID:8c4dd21966739024fbd72155091d199e"
+        "GUID:8c4dd21966739024fbd72155091d199e",
+        "GUID:febaf25a60dafbd44941357b21678606"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
