@@ -18,9 +18,7 @@ namespace UnityExtended.AI.Extensions {
             if (NavMesh.SamplePosition(position, out NavMeshHit hit, samplingDistance, filter)) {
                 Vector3 sampledPos = hit.position;
 
-                if (agent.destination == sampledPos && agent.remainingDistance <= agent.stoppingDistance) {
-                    if (!agent.hasPath || agent.velocity.sqrMagnitude == 0) return true;
-                }
+                return agent.destination == sampledPos && agent.remainingDistance <= agent.stoppingDistance && !agent.IsMoving();
             }
 
             return false;
